@@ -13,21 +13,50 @@
 
 <body>
     <header>
-        <nav class="main-nav">
-            <button class="hamburger hamburger--collapse" type="button" aria-label="Menu" aria-controls="navigation">
-                <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                </span>
-            </button>
-            <nav id="navigation">
-                <!--navigation goes here-->
+        <div class="container">
+            <nav id="main-nav">
+                <a id="logo" href="/">T</a>
+                <button id="hamburger-icon" class="hamburger hamburger--collapse" type="button" aria-label="Menu"
+                    aria-controls="navigation">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+                <div id="nav-links">
+                    <ul id="nav-menu">
+                        <li id="home-button" class="nav-item"><a href="/">Home</a></li>
+                        <li class="nav-item"><a href="about.html">About</a></li>
+                        <li class="nav-item"><a href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
             </nav>
-        </nav>
+        </div>
     </header>
 
     <main>
-
+        <section id="intro" class="container">
+            <div id="tucker-photo-container">
+                <img id="tucker-photo" class="photo-background" src="assets/images/tucker-photo.png"
+                    alt="Tucker Barrett, smiling while on a hike in Korea">
+            </div>
+            <div id="heading-container">
+                <h1>Hey! I'm Tucker Barrett.</h1>
+                <p>A full stack web developer</p>
+            </div>
+        </section>
+        <section id="contact" class="container">
+            <h3>Get in touch!</h3>
+            <p>Feel free to drop a line anytime, whether you want to work together, hire me, or just to chat!
+                Send me an email at <span id="email"><a href="#">ctbarrett.tech@gmail.com</a></span>!
+            </p>
+        </section>
     </main>
+
+    <footer>
+
+    </footer>
 
 
 

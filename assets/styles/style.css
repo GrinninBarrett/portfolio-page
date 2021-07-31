@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Tenor+Sans&display=swap');
 
 :root {
-    --background: rgb(226, 226, 226);
+    --background: rgb(238, 238, 238);
     --base-text: #1f2827;
     --hover-text: #4e5242;
     --medium-gray: #7b8687;
@@ -16,6 +16,74 @@ body {
     font-family: "Tenor Sans", sans-serif;
 }
 
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+    width: 125px;
+    transition: all 0.5s ease;
+}
+
+#main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 1em 0;
+}
+
+
+#logo {
+    color: var(--base-text);
+    font-family: "Marcellus", sans-serif;
+    font-size: 4em;
+}
+
+#nav-menu {
+    display: flex;
+}
+
+#home-button {
+    display: none;
+}
+
+#hamburger-icon {
+    display: none;
+}
+
+
+#intro {
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-top: 5em;
+}
+
+#heading-container {
+    margin-top: 6em;
+}
+
+
+#tucker-photo {
+    height: 400px;
+}
+
+
+
+.container {
+    max-width: 85%;
+    margin: auto;
+}
+
+
+.nav-item {
+    color: var(--base-text);
+}
 
 
 
@@ -49,6 +117,39 @@ body {
     background-color: #000; 
 }
 
+.hamburger-box {
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    position: relative; 
+}
+  
+.hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px;
+}
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 40px;
+    height: 4px;
+    background-color: #000;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease; 
+}
+.hamburger-inner::before, .hamburger-inner::after {
+    content: "";
+    display: block; 
+}
+.hamburger-inner::before {
+    top: -10px; 
+}
+.hamburger-inner::after {
+    bottom: -10px; 
+}
+
 .hamburger--collapse .hamburger-inner {
     top: auto;
     bottom: 0;
@@ -78,4 +179,37 @@ body {
     top: 0;
     transform: rotate(-90deg);
     transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1); 
+}
+
+
+@media screen and (max-width: 768px) {
+
+    #nav-links {
+        background-color: var(--background);
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        margin-top: 5em;
+        z-index: 2;
+    }
+
+    #nav-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #home-button {
+        display: block;
+    }
+
+    #hamburger-icon {
+        display: block;
+    }
+
+    .nav-item {
+        margin-top: 2em;
+    }
 }
