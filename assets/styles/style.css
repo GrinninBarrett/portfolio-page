@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+
+:root {
+    --background: rgb(226, 226, 226);
+    --base-text: #1f2827;
+    --hover-text: #4e5242;
+    --medium-gray: #7b8687;
+    --green-accent: #6e8670;
+    --red-accent: #b4746c;
+    --light-blue: #a0b8d1;
+    --blue-accent: #6294c8;
+}
+
+body {
+    background-color: var(--background);
+    font-family: "Tenor Sans", sans-serif;
+}
