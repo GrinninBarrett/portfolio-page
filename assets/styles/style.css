@@ -13,7 +13,7 @@
 
 body {
     background-color: var(--background);
-    font-family: "Tenor Sans", sans-serif;
+    font-family: "Marcellus", sans-serif;
 }
 
 
@@ -23,9 +23,20 @@ a {
 
 li {
     list-style-type: none;
-    width: 125px;
+}
+
+header li a {
+    padding: 5px 10px;
+    border-radius: 15px;
     transition: all 0.5s ease;
 }
+
+header li a:hover {
+    background-color: var(--green-accent);
+    color: var(--background);
+}
+
+
 
 #main-nav {
     display: flex;
@@ -38,7 +49,6 @@ li {
 
 #logo {
     color: var(--base-text);
-    font-family: "Marcellus", sans-serif;
     font-size: 4em;
 }
 
@@ -56,35 +66,61 @@ li {
 
 
 #intro {
-    height: 100vh;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#top-intro-container {
     display: flex;
     flex-direction: row-reverse;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    margin-top: 5em;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6em;
 }
 
 #heading-container {
     margin-top: 6em;
 }
 
+#bottom-intro-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+}
+
+
+
 
 #tucker-photo {
     height: 400px;
 }
 
-
-
-.container {
-    max-width: 85%;
-    margin: auto;
-}
-
-
-.nav-item {
+#email {
     color: var(--base-text);
 }
 
+
+
+.container {
+    max-width: 80%;
+    margin: auto;
+}
+
+.main-nav-item {
+    color: var(--base-text);
+    margin-left: 100px;
+}
+
+.main-nav-item:hover {
+    color: var(--red-accent);
+}
+
+.main-text {
+    color: var(--base-text);
+}
 
 
 

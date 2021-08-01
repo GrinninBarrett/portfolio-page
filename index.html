@@ -24,10 +24,10 @@
                 </button>
                 <div id="nav-links">
                     <ul id="nav-menu">
-                        <li id="home-button" class="nav-item"><a href="/">Home</a></li>
-                        <li class="nav-item"><a href="about.html">About</a></li>
-                        <li class="nav-item"><a href="projects.html">Projects</a></li>
-                        <li class="nav-item"><a href="#contact">Contact</a></li>
+                        <li id="home-button" class="main-nav-item link"><a href="/">Home</a></li>
+                        <li class="main-nav-item link"><a href="about.html">About</a></li>
+                        <li class="main-nav-item link"><a href="projects.html">Projects</a></li>
+                        <li class="main-nav-item link"><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
 
@@ -37,19 +37,25 @@
 
     <main>
         <section id="intro" class="container">
-            <div id="tucker-photo-container">
-                <img id="tucker-photo" class="photo-background" src="assets/images/tucker-photo.png"
-                    alt="Tucker Barrett, smiling while on a hike in Korea">
+            <div id="top-intro-container">
+                <div id="tucker-photo-container">
+                    <img id="tucker-photo" class="photo-background" src="assets/images/tucker-photo.png"
+                        alt="Tucker Barrett, smiling while on a hike in Korea">
+                </div>
+                <div id="heading-container">
+                    <h1 class="main-text">Hey! I'm Tucker Barrett.</h1>
+                    <p class="main-text">A full stack web developer</p>
+                </div>
             </div>
-            <div id="heading-container">
-                <h1>Hey! I'm Tucker Barrett.</h1>
-                <p>A full stack web developer</p>
+            <div id="bottom-intro-container">
+                <h3 id="slogan">Pursuing my passion for building responsive, accessible web sites and applications</h3>
             </div>
+
         </section>
         <section id="contact" class="container">
             <h3>Get in touch!</h3>
             <p>Feel free to drop a line anytime, whether you want to work together, hire me, or just to chat!
-                Send me an email at <span id="email"><a href="#">ctbarrett.tech@gmail.com</a></span>!
+                Send me an email at <span id="email"><a href="#" class="link">ctbarrett.tech@gmail.com</a></span>!
             </p>
         </section>
     </main>
