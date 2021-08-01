@@ -2,6 +2,8 @@ const hamburgerIcon = document.querySelector("#hamburger-icon");
 const navLinksEl = document.querySelector("#nav-links");
 const navMenuUl = document.querySelector("#nav-menu");
 
+const recentProjectsContainer = document.querySelector("#recent-project-cards-container");
+
 const emailLink = document.querySelector("#email");
 
 let menuOpen = false;
@@ -52,3 +54,13 @@ emailLink.addEventListener("click", (event) => {
     }, 5000);
 
 })
+
+
+// function addCardsToMain() {
+//     for (let i = 0; i < 4, i++) {
+//         let nextCard = document.createElement("div");
+
+//     }
+// }
+
+// addCardsToMain();
