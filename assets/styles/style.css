@@ -4,10 +4,10 @@
 :root {
     --background: rgb(238, 238, 238);
     --base-text: #1f2827;
-    --light-text: #becfcd;
-    --hover-text: #4e5242;
+    --light-text: #cbdfdc;
     --medium-gray: #7b8687;
     --green-accent: #6e8670;
+    --light-green-accent: #b1c5b3;
     --red-accent: #b4746c;
     --light-blue: #a0b8d1;
     --blue-accent: #6294c8;
@@ -32,8 +32,6 @@ h1 {
 }
 
 footer {
-    height: 100px;
-    max-width: 100%;
     background-color: var(--green-accent);
     padding: 35px 0;
 }
@@ -51,6 +49,9 @@ footer {
     font-family: "Quicksand", sans-serif;
 }
 
+.logo {
+    font-size: 4em;
+}
 
 /* Give shape to all page links */
 .link {
@@ -67,7 +68,7 @@ footer {
 /* Style all links with light hover effect */
 .light-link:hover {
     background-color: var(--background);
-    color: var(--base-text);
+    color: var(--green-accent);
 }
 
 
@@ -88,8 +89,8 @@ footer {
     padding: 1em 0;
 }
 
-#logo {
-    font-size: 4em;
+#header-logo:hover {
+    color: var(--green-accent);
 }
 
 #hamburger-icon {
@@ -144,6 +145,22 @@ footer {
     color: var(--red-accent);
 }
 
+#footer-nav {
+    justify-content: space-between;
+}
+
+#footer-logo:hover {
+    color:var(--light-green-accent);
+}
+
+#footer-nav-menu {
+    padding: 0;
+}
+
+#copyright {
+    text-align: center;
+}
+
 
 
 .container {
@@ -156,9 +173,12 @@ footer {
 }
 
 .footer-nav-item {
-    margin-left: 25px;
+    margin: 0 10px;
 }
 
+.social-link:hover {
+    color: var(--light-green-accent);
+}
 
 
 
@@ -311,6 +331,20 @@ transform: translate(-50%, calc(-100% - 5px)) rotate(45deg);
 
 /* Media queries for smaller screens */
 
+@media screen and (max-width: 992px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    #description{
+        font-size: 1.2em;
+    }
+
+    #tucker-photo {
+        height: 300px;
+    }
+}
+
 @media screen and (max-width: 768px) {
 
     /* TODO:
@@ -328,13 +362,6 @@ transform: translate(-50%, calc(-100% - 5px)) rotate(45deg);
         margin-top: 5em;
     }
 
-    #nav-menu {
-        flex-direction: column;
-        justify-content: center;
-        margin-top: 1em;
-        padding: 0;
-    }
-
     #hamburger-icon {
         display: block;
     }
@@ -345,15 +372,31 @@ transform: translate(-50%, calc(-100% - 5px)) rotate(45deg);
 
     #heading-container {
         text-align: center;
+        margin-top: 0;
     }
 
     #bottom-intro-container {
         text-align: center;
     }
 
+    #footer-nav {
+        flex-direction: column;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 1em;
+        padding: 0;
+    }
+
 
     .main-nav-item {
         margin: 2em 0;
+    }
+
+    .footer-nav-item {
+        margin: 0.3em 0;
     }
 }
 

@@ -6,6 +6,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <link rel='icon' href='assets/images/favicon.png' />
+    <script src="https://kit.fontawesome.com/3bbbbe8fb3.js" crossorigin="anonymous"></script>
     <link href='assets/styles/normalize.css' rel='stylesheet'>
     <link href='assets/styles/style.css' rel='stylesheet'>
     <title>Tucker Barrett</title>
@@ -15,7 +16,7 @@
     <header>
         <div class="container">
             <nav id="main-nav" class="flex-item nav-links-container">
-                <a id="logo" class="base-text" href="/">T</a>
+                <a id="header-logo" class="logo base-text" href="/">T</a>
                 <button id="hamburger-icon" class="hamburger hamburger--collapse" type="button" aria-label="Menu"
                     aria-controls="navigation" aria-expanded="true">
                     <span class="hamburger-box">
@@ -23,11 +24,11 @@
                     </span>
                 </button>
                 <div id="nav-links">
-                    <ul id="nav-menu" class="flex-item">
-                        <li class="main-nav-item"><a class="link green-link base-text" href="/">Home</a></li>
-                        <li class="main-nav-item"><a class="link green-link base-text" href="about.html">About</a></li>
-                        <li class="main-nav-item"><a class="link green-link base-text" href="projects.html">Projects</a></li>
-                        <li class="main-nav-item"><a class="link green-link base-text" href="#contact">Contact</a></li>
+                    <ul id="nav-menu" class="flex-item nav-list">
+                        <li class="main-nav-item nav-item"><a class="link green-link base-text" href="/">Home</a></li>
+                        <li class="main-nav-item nav-item"><a class="link green-link base-text" href="about.html">About</a></li>
+                        <li class="main-nav-item nav-item"><a class="link green-link base-text" href="projects.html">Projects</a></li>
+                        <li class="main-nav-item nav-item"><a class="link green-link base-text" href="#contact">Contact</a></li>
                     </ul>
                 </div>
 
@@ -55,26 +56,31 @@
         </section>
         <section id="contact" class="container flex-item flex-column">
             <h3 class="base-text">Get in touch!</h3>
-            <p class="base-text">Feel free to drop a line anytime, whether you want to work together, hire me, or just to chat!
+            <p class="base-text">Feel free to drop a line any time, whether you want to work together, hire me, or just to chat!
                 Send me an email at <a href="" id="email" class="tooltip top" data-tooltip="Click to copy email address to clipboard" data-position="top">ctbarrett.tech@gmail.com</a>!
             </p>
         </section>
     </main>
 
     <footer>
-        <div class="container flex-item flex-column">
+        <div class="container">
             <nav id="footer-nav" class="nav-links-container flex-item">
-                <a id="logo" href="/" class="light-text link">T</a>
+                <a id="footer-logo" href="/" class="logo light-text">T</a>
                 <div id="footer-nav-links">
-                    <ul id="footer-nav-menu" class="flex-item">
-                        <li class="footer-nav-item"><a class="link light-link light-text" href="/">Home</a></li>
-                        <li class="footer-nav-item"><a class="link light-link light-text" href="about.html">About</a></li>
-                        <li class="footer-nav-item"><a class="link light-link light-text" href="projects.html">Projects</a></li>
-                        <li class="footer-nav-item"><a class="link light-link light-text" href="#contact">Contact</a></li>
+                    <ul id="footer-nav-menu" class="flex-item nav-list">
+                        <li class="footer-nav-item nav-item"><a class="link light-link light-text" href="/">Home</a></li>
+                        <li class="footer-nav-item nav-item"><a class="link light-link light-text" href="about.html">About</a></li>
+                        <li class="footer-nav-item nav-item"><a class="link light-link light-text" href="projects.html">Projects</a></li>
+                        <li class="footer-nav-item nav-item"><a class="link light-link light-text" href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div id="footer-social-links">
-
+                    <a class="social-link link light-text" href="https://github.com/GrinninBarrett" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a class="social-link link light-text" href="https://www.linkedin.com/in/c-tucker-barrett-10015645/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
                 </div>
             </nav>
             <div id="copyright">
