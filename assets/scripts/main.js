@@ -2,7 +2,10 @@ const hamburgerIcon = document.querySelector("#hamburger-icon");
 const navLinksEl = document.querySelector("#nav-links");
 const navMenuUl = document.querySelector("#nav-menu");
 
+const seeAllProjects = document.querySelector("#see-all-projects");
+
 const recentProjectsContainer = document.querySelector("#recent-project-cards-container");
+const allProjectsCardsContainer = document.querySelector("#all-projects-cards-container");
 
 const emailLink = document.querySelector("#email");
 
@@ -56,11 +59,77 @@ emailLink.addEventListener("click", (event) => {
 })
 
 
-// function addCardsToMain() {
-//     for (let i = 0; i < 4, i++) {
-//         let nextCard = document.createElement("div");
+// Use data from projects.js to populate info to recent projects cards on page load
+function addCardsToMain() {
 
+    for (let i = 0; i < 6; i++) {
+
+        // Create all relevant elements and set the appropriate attributes
+        let nextCard = document.createElement("article");
+        nextCard.setAttribute("class", "project-card");
+
+        let nextImage = document.createElement("img");
+        nextImage.setAttribute("class", "project-image");
+        nextImage.setAttribute("src", allProjects[i].image);
+
+        let nextInfoDiv = document.createElement("div");
+        nextInfoDiv.setAttribute("class", "project-info flex-item flex-column");
+
+        let nextGitHubButton = document.createElement("a");
+        nextGitHubButton.setAttribute("class", "link light-text project-link");
+        nextGitHubButton.setAttribute("href", allProjects[i].gitHub);
+        nextGitHubButton.setAttribute("target", "_blank");
+        nextGitHubButton.textContent = "View on Github";
+
+        let nextLiveURL = document.createElement("a");
+        nextLiveURL.setAttribute("class", "link light-text project-link");
+        nextLiveURL.setAttribute("href", allProjects[i].liveURL);
+        nextLiveURL.setAttribute("target", "_blank");
+        nextLiveURL.textContent = "See Live Site";
+
+        // Append each new element to its parent
+        recentProjectsContainer.appendChild(nextCard);
+        nextCard.appendChild(nextImage);
+        nextCard.appendChild(nextInfoDiv);
+        nextInfoDiv.appendChild(nextGitHubButton);
+        nextInfoDiv.appendChild(nextLiveURL);
+    }
+}
+
+addCardsToMain();
+
+
+// function addAllProjects() {
+//     for (let i = 0; i < allProjects.length; i++) {
+
+//         // Create all relevant elements and set the appropriate attributes
+//         let nextCard = document.createElement("article");
+//         nextCard.setAttribute("class", "project-card");
+
+//         let nextImage = document.createElement("img");
+//         nextImage.setAttribute("class", "project-image");
+//         nextImage.setAttribute("src", allProjects[i].image);
+
+//         let nextInfoDiv = document.createElement("div");
+//         nextInfoDiv.setAttribute("class", "project-info flex-item flex-column");
+
+//         let nextGitHubButton = document.createElement("a");
+//         nextGitHubButton.setAttribute("class", "link light-text project-link");
+//         nextGitHubButton.setAttribute("href", allProjects[i].gitHub);
+//         nextGitHubButton.setAttribute("target", "_blank");
+//         nextGitHubButton.textContent = "View on Github";
+
+//         let nextLiveURL = document.createElement("a");
+//         nextLiveURL.setAttribute("class", "link light-text project-link");
+//         nextLiveURL.setAttribute("href", allProjects[i].liveURL);
+//         nextLiveURL.setAttribute("target", "_blank");
+//         nextLiveURL.textContent = "See Live Site";
+
+//         // Append each new element to its parent
+//         recentProjectsContainer.appendChild(nextCard);
+//         nextCard.appendChild(nextImage);
+//         nextCard.appendChild(nextInfoDiv);
+//         nextInfoDiv.appendChild(nextGitHubButton);
+//         nextInfoDiv.appendChild(nextLiveURL);
 //     }
 // }
-
-// addCardsToMain();

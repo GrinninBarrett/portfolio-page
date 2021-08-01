@@ -89,10 +89,17 @@ footer {
     margin-top: 25px;
 }
 
+#recent-project-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 25px 0;
+}
+
 
 #contact {
     justify-content: center;
-    height: 30vh;
+    height: 50vh;
 
 }
 
@@ -171,6 +178,48 @@ footer {
 .main-nav-item {
     margin-left: 75px;
 }
+
+.project-card {
+    margin: 0.5em;
+    border: 3px solid var(--green-accent);
+    height: 350px;
+    transition: all 0.5s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.1);
+}
+
+.project-image {
+    height: 100%;
+}
+
+.project-info {
+    justify-content: space-evenly;
+    background-color: var(--background);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.project-card:hover .project-info {
+    opacity: 0.9;
+}
+
+.project-link {
+    background-color: var(--red-accent);
+    transition: all 0.5s ease;
+}
+
+.project-link:hover {
+    background-color: var(--green-accent);
+}
+
+
 
 .footer-nav-item {
     margin: 0 10px;
