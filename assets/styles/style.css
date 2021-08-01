@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Tenor+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Quicksand&display=swap');
+
 
 :root {
     --background: rgb(238, 238, 238);
@@ -19,6 +20,7 @@ body {
 
 a {
     text-decoration: none;
+    transition: all 0.5s ease;
 }
 
 li {
@@ -29,12 +31,15 @@ header li a {
     color: var(--base-text);
     padding: 5px 10px;
     border-radius: 15px;
-    transition: all 0.5s ease;
 }
 
 header li a:hover {
     background-color: var(--green-accent);
     color: var(--background);
+}
+
+h1 {
+    font-size: 2.5em;
 }
 
 
@@ -85,26 +90,56 @@ header li a:hover {
     padding: 0 1em;
 }
 
+#tucker-photo {
+    height: 400px;
+}
+
 #heading-container {
     margin-top: 6em;
 }
 
+#description{
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.5em;
+}
+
 #bottom-intro-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 20%;
 }
 
-
-
-
-#tucker-photo {
-    height: 400px;
+#learn-more {
+    color: var(--base-text);
+    font-family: "Quicksand", sans-serif;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-top: 25px;
 }
 
+#learn-more:hover {
+    background-color: var(--green-accent);
+    color: var(--background);
+}
+
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 #email {
-    color: var(--base-text);
+    color: var(--green-accent);
+}
+
+#email:hover {
+    color: var(--red-accent);
 }
 
 
@@ -259,4 +294,25 @@ header li a:hover {
     .main-nav-item {
         margin: 2em 0;
     }
+}
+
+
+@media  screen and (max-height: 750px) {
+    #intro {
+        justify-content: flex-start;
+    }
+    
+    #tucker-photo {
+        height: 350px;
+    }
+
+    #heading-container {
+        margin-top: 4rem;
+    }
+
+    #bottom-intro-container {
+        margin-top: 25px;
+    }
+
+
 }
