@@ -33,8 +33,22 @@ hamburgerIcon.addEventListener("click", () => {
 })
 
 
-emailLink.addEventListener("click", () => {
-    console.log(emailLink.textContent);
-    console.log(typeof(emailLink.textContent));
+// Copy email address to clipboard when clicked
+emailLink.addEventListener("click", (event) => {
+    event.preventDefault();
+
+    const el = document.createElement("textarea");
+    el.setAttribute("readonly", "");
+    el.value = event.target.textContent;
+    document.body.appendChild(el);
+    el.select();
     document.execCommand("copy");
+    document.body.removeChild(el);
+
+    let tooltip = document.querySelector("#email");
+    tooltip.setAttribute("data-tooltip", "Email copied to clipboard!");
+    setTimeout(() => {
+        tooltip.setAttribute("data-tooltip", "Click to copy email address to clipboard");
+    }, 5000);
+
 })

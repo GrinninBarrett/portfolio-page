@@ -4,6 +4,7 @@
 :root {
     --background: rgb(238, 238, 238);
     --base-text: #1f2827;
+    --light-text: #becfcd;
     --hover-text: #4e5242;
     --medium-gray: #7b8687;
     --green-accent: #6e8670;
@@ -17,7 +18,6 @@ body {
     font-family: "Marcellus", sans-serif;
 }
 
-
 a {
     text-decoration: none;
     transition: all 0.5s ease;
@@ -27,47 +27,69 @@ li {
     list-style-type: none;
 }
 
-header li a {
+h1 {
+    font-size: 2.5em;
+}
+
+footer {
+    height: 100px;
+    max-width: 100%;
+    background-color: var(--green-accent);
+    padding: 35px 0;
+}
+
+/* Styles text colors */
+.base-text {
     color: var(--base-text);
+}
+
+.light-text {
+    color: var(--light-text);
+}
+
+.quicksand {
+    font-family: "Quicksand", sans-serif;
+}
+
+
+/* Give shape to all page links */
+.link {
     padding: 5px 10px;
     border-radius: 15px;
 }
 
-header li a:hover {
+/* Style all links with green hover effect */
+.green-link:hover {
     background-color: var(--green-accent);
     color: var(--background);
 }
 
-h1 {
-    font-size: 2.5em;
+/* Style all links with light hover effect */
+.light-link:hover {
+    background-color: var(--background);
+    color: var(--base-text);
+}
+
+
+.flex-item {
+    display: flex;
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
 }
 
 
 
 #main-nav {
-    display: flex;
-    align-items: center;
     justify-content: space-between;
     height: 100%;
     padding: 1em 0;
 }
 
-
 #logo {
-    color: var(--base-text);
     font-size: 4em;
-}
-
-#nav-links {
-    transition: all 0.5s ease-in;
-}
-
-#nav-menu {
-    display: flex;
-}
-
-#home-button {
-    display: none;
 }
 
 #hamburger-icon {
@@ -77,15 +99,11 @@ h1 {
 
 #intro {
     height: 90vh;
-    display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
 }
 
 #top-intro-container {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
+    width: 100%;
     justify-content: space-between;
     padding: 0 1em;
 }
@@ -99,40 +117,24 @@ h1 {
 }
 
 #description{
-    font-family: "Quicksand", sans-serif;
     font-size: 1.5em;
 }
 
 #bottom-intro-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
     height: 20%;
 }
 
 #learn-more {
-    color: var(--base-text);
-    font-family: "Quicksand", sans-serif;
-    padding: 5px 10px;
-    border-radius: 15px;
     margin-top: 25px;
-}
-
-#learn-more:hover {
-    background-color: var(--green-accent);
-    color: var(--background);
 }
 
 
 #contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    height: 80vh;
+
 }
-
-
 
 #email {
     color: var(--green-accent);
@@ -150,21 +152,17 @@ h1 {
 }
 
 .main-nav-item {
-    margin-left: 100px;
+    margin-left: 75px;
 }
 
-.main-nav-item:hover {
-    color: var(--red-accent);
-}
-
-.main-text {
-    color: var(--base-text);
+.footer-nav-item {
+    margin-left: 25px;
 }
 
 
 
 
-/* Hamburger mobile nav button taken from Jonathan Suh - https://github.com/jonsuh/hamburgers */
+/* Hamburger mobile nav button from Jonathan Suh - https://github.com/jonsuh/hamburgers */
 .hamburger {
     padding: 15px 15px;
     display: inline-block;
@@ -180,12 +178,11 @@ h1 {
     margin: 0;
     overflow: visible; 
 }
-.hamburger:hover {
+.hamburger:hover,
+.hamburger.is-active:hover {
     opacity: 0.7;
 }
-.hamburger.is-active:hover {
-    opacity: 0.7; 
-}
+
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
 .hamburger.is-active .hamburger-inner::after {
@@ -257,7 +254,63 @@ h1 {
 }
 
 
+/* Tooltip for email address hover from Florin Pop - https://www.florin-pop.com/blog/2019/05/pure-css-tooltip/ */
+.tooltip {
+    position: relative;
+    text-align: center;
+    transition: all 0.5s easse;
+}
+  
+.tooltip::after {
+background-color: var(--base-text);
+color: var(--light-text);
+border-radius: 10px;
+font-size: 0.8em;
+display: none;
+width: 150px;
+padding: 10px;
+position: absolute;
+z-index: 999;
+transition: all 0.5s easse;
+}
+
+.tooltip::before {
+background-color: var(--base-text);
+content: ' ';
+display: none;
+position: absolute;
+width: 15px;
+height: 15px;
+z-index: 999;
+transition: all 0.5s easse;
+}
+
+.tooltip:hover::after {
+display: block;
+}
+
+.tooltip:hover::before {
+display: block;
+}
+
+.tooltip.top::after {
+content: attr(data-tooltip);
+top: 0;
+left: 50%;
+transform: translate(-50%, calc(-100% - 10px));
+}
+
+.tooltip.top::before {
+top: 0;
+left: 50%;
+transform: translate(-50%, calc(-100% - 5px)) rotate(45deg);
+}
+
+
+
+
 /* Media queries for smaller screens */
+
 @media screen and (max-width: 768px) {
 
     /* TODO:
@@ -277,19 +330,27 @@ h1 {
 
     #nav-menu {
         flex-direction: column;
-        align-items: center;
         justify-content: center;
         margin-top: 1em;
         padding: 0;
     }
 
-    #home-button {
-        display: block;
-    }
-
     #hamburger-icon {
         display: block;
     }
+
+    #top-intro-container {
+        flex-direction: column;
+    }
+
+    #heading-container {
+        text-align: center;
+    }
+
+    #bottom-intro-container {
+        text-align: center;
+    }
+
 
     .main-nav-item {
         margin: 2em 0;
