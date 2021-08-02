@@ -60,43 +60,44 @@ emailLink.addEventListener("click", (event) => {
 
 
 // Use data from projects.js to populate info to recent projects cards on page load
-// function addCardsToMain() {
+function addCardsToMain() {
 
-//     for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < 3; i++) {
 
-//         // Create all relevant elements and set the appropriate attributes
-//         let nextCard = document.createElement("article");
-//         nextCard.setAttribute("class", "project-card");
+        // Create all relevant elements and set the appropriate attributes
+        let nextCard = document.createElement("article");
+        nextCard.setAttribute("class", "project-card");
 
-//         let nextImage = document.createElement("img");
-//         nextImage.setAttribute("class", "project-image");
-//         nextImage.setAttribute("src", allProjects[i].image);
+        let nextImage = document.createElement("img");
+        nextImage.setAttribute("class", "project-image");
+        nextImage.setAttribute("src", allProjects[i].image);
+        nextImage.setAttribute("alt", allProjects[i].alt);
 
-//         let nextInfoDiv = document.createElement("div");
-//         nextInfoDiv.setAttribute("class", "project-info flex-item flex-column");
+        let nextInfoDiv = document.createElement("div");
+        nextInfoDiv.setAttribute("class", "project-info flex-item flex-column");
 
-//         let nextGitHubButton = document.createElement("a");
-//         nextGitHubButton.setAttribute("class", "link light-text project-link");
-//         nextGitHubButton.setAttribute("href", allProjects[i].gitHub);
-//         nextGitHubButton.setAttribute("target", "_blank");
-//         nextGitHubButton.textContent = "View on Github";
+        let nextGitHubButton = document.createElement("a");
+        nextGitHubButton.setAttribute("class", "link light-text project-link");
+        nextGitHubButton.setAttribute("href", allProjects[i].gitHub);
+        nextGitHubButton.setAttribute("target", "_blank");
+        nextGitHubButton.textContent = "View on Github";
 
-//         let nextLiveURL = document.createElement("a");
-//         nextLiveURL.setAttribute("class", "link light-text project-link");
-//         nextLiveURL.setAttribute("href", allProjects[i].liveURL);
-//         nextLiveURL.setAttribute("target", "_blank");
-//         nextLiveURL.textContent = "See Live Site";
+        let nextLiveURL = document.createElement("a");
+        nextLiveURL.setAttribute("class", "link light-text project-link");
+        nextLiveURL.setAttribute("href", allProjects[i].liveURL);
+        nextLiveURL.setAttribute("target", "_blank");
+        nextLiveURL.textContent = "See Live Site";
 
-//         // Append each new element to its parent
-//         recentProjectsContainer.appendChild(nextCard);
-//         nextCard.appendChild(nextImage);
-//         nextCard.appendChild(nextInfoDiv);
-//         nextInfoDiv.appendChild(nextGitHubButton);
-//         nextInfoDiv.appendChild(nextLiveURL);
-//     }
-// }
+        // Append each new element to its parent
+        recentProjectsContainer.appendChild(nextCard);
+        nextCard.appendChild(nextImage);
+        nextCard.appendChild(nextInfoDiv);
+        nextInfoDiv.appendChild(nextGitHubButton);
+        nextInfoDiv.appendChild(nextLiveURL);
+    }
+}
 
-// addCardsToMain();
+addCardsToMain();
 
 
 // function addAllProjects() {

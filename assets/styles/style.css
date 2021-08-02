@@ -56,20 +56,10 @@ footer {
     display: none;
 }
 
-
-#intro {
-    height: 90vh;
-    justify-content: space-evenly;
-}
-
 #top-intro-container {
     width: 100%;
     justify-content: space-between;
     padding: 0 1em;
-}
-
-#tucker-photo {
-    height: 400px;
 }
 
 #heading-container {
@@ -122,6 +112,10 @@ footer {
 
 #copyright {
     text-align: center;
+}
+
+#about-text-container {
+    width: 50%;
 }
 
 
@@ -179,7 +173,21 @@ footer {
     margin-left: 75px;
 }
 
+.intro {
+    height: 90vh;
+    justify-content: space-evenly;
+}
+
+.about {
+    justify-content: space-evenly;
+}
+
+.tucker-photo {
+    height: 400px;
+}
+
 .project-card {
+    position: relative;
     margin: 0.5em;
     border: 3px solid var(--green-accent);
     height: 350px;
@@ -389,7 +397,7 @@ transform: translate(-50%, calc(-100% - 5px)) rotate(45deg);
         font-size: 1.2em;
     }
 
-    #tucker-photo {
+    .tucker-photo {
         height: 300px;
     }
 }
@@ -466,7 +474,7 @@ transform: translate(-50%, calc(-100% - 5px)) rotate(45deg);
         justify-content: flex-start;
     }
     
-    #tucker-photo {
+    .tucker-photo {
         height: 350px;
     }
 
