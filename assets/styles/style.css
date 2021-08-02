@@ -75,7 +75,7 @@ footer {
 
 
 #contact {
-    justify-content: center;
+    justify-content: space-evenly;
     height: 50vh;
 
 }
