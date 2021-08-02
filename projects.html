@@ -6,12 +6,13 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <link rel='icon' href='assets/images/favicon.png' />
+    <script src="https://kit.fontawesome.com/3bbbbe8fb3.js" crossorigin="anonymous"></script>
     <link href='assets/styles/normalize.css' rel='stylesheet'>
     <link href='assets/styles/style.css' rel='stylesheet'>
     <title>Tucker Barrett</title>
 </head>
 
-<body>
+<body class="projects">
     <header>
         <div class="container">
             <nav id="main-nav" class="flex-item nav-links-container">
@@ -29,7 +30,7 @@
                                 href="about.html">About</a></li>
                         <li class="main-nav-item nav-item"><a class="link green-link base-text"
                                 href="projects.html">Projects</a></li>
-                        <li class="main-nav-item nav-item"><a class="link green-link base-text"
+                        <li id="contact-link" class="main-nav-item nav-item"><a class="link green-link base-text"
                                 href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -39,13 +40,29 @@
     </header>
 
     <main>
-        <section id="recent-projects" class="container flex-item flex-column">
-            <h4 id="recent-projects-heading" class="base-text">Recent Projects</h4>
-            <div id="all-project-cards-container" class="flex-item">
+
+        <section id="projects-heading" class="container flex-item">
+            <h1 class="base-text">Projects</h1>
+        </section>
+
+        <section id="all-projects" class="container flex-item flex-column">
+            <h4 id="all-projects-heading" class="base-text">Here's what I've been working on</h4>
+            <div id="all-projects-cards-container" class="flex-item project-cards-container">
 
             </div>
-            <a class="link green-link base-text quicksand" href="./projects.html">All Projects</a>
+            <a class="link green-link base-text quicksand" href="https://github.com/GrinninBarrett" target="_blank">See more on GitHub</a>
         </section>
+
+        <section id="contact" class="container flex-item flex-column">
+            <h4 class="base-text">Get in touch!</h4>
+            <p class="base-text">Feel free to drop a line any time, whether you want to work together, hire me, or just
+                to chat!
+                Send me an email at <a href="" id="email" class="tooltip top"
+                    data-tooltip="Click to copy email address to clipboard"
+                    data-position="top">ctbarrett.tech@gmail.com</a>!
+            </p>
+        </section>
+
     </main>
 
     <footer>
@@ -61,7 +78,7 @@
                                     href="about.html">About</a></li>
                             <li class="footer-nav-item nav-item"><a class="link light-link light-text"
                                     href="projects.html">Projects</a></li>
-                            <li class="footer-nav-item nav-item"><a class="link light-link light-text"
+                            <li id="contact-link" class="footer-nav-item nav-item"><a class="link light-link light-text"
                                     href="#contact">Contact</a></li>
                         </ul>
                     </div>

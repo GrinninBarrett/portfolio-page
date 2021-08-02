@@ -1,11 +1,12 @@
 const hamburgerIcon = document.querySelector("#hamburger-icon");
 const navLinksEl = document.querySelector("#nav-links");
 const navMenuUl = document.querySelector("#nav-menu");
+const contactLink = document.querySelector("#contact-link");
 
-// const seeAllProjects = document.querySelector("#see-all-projects");
+const seeAllProjects = document.querySelector("#see-all-projects");
 
 const recentProjectsContainer = document.querySelector("#recent-project-cards-container");
-// const allProjectsCardsContainer = document.querySelector("#all-projects-cards-container");
+const allProjectsContainer = document.querySelector("#all-projects-cards-container");
 
 const emailLink = document.querySelector("#email");
 
@@ -21,7 +22,7 @@ window.addEventListener("resize", () => {
     }
 })
 
-
+// Toggle hamburger icon state and show/hide mobile nav bar
 hamburgerIcon.addEventListener("click", () => {
     hamburgerIcon.classList.toggle("is-active");
     if (!menuOpen) {
@@ -35,6 +36,18 @@ hamburgerIcon.addEventListener("click", () => {
         hamburgerIcon.setAttribute("aria-expanded", "false");
         menuOpen = false;
     }
+})
+
+// Ensure clicking "contact" link closes mobile nav bar
+contactLink.addEventListener("click", () => {
+    hamburgerIcon.classList.remove("is-active");
+    if (menuOpen) {
+        navLinksEl.style.display = "none";
+        navLinksEl.style.right = "-1000";
+        hamburgerIcon.setAttribute("aria-expanded", "false");
+        menuOpen = false;
+    }
+
 })
 
 
@@ -76,6 +89,10 @@ function addCardsToMain() {
         let nextInfoDiv = document.createElement("div");
         nextInfoDiv.setAttribute("class", "project-info flex-item flex-column");
 
+        let nextTitle = document.createElement("h5");
+        nextTitle.setAttribute("class", "base-text");
+        nextTitle.textContent = allProjects[i].name;
+
         let nextGitHubButton = document.createElement("a");
         nextGitHubButton.setAttribute("class", "link light-text project-link");
         nextGitHubButton.setAttribute("href", allProjects[i].gitHub);
@@ -92,45 +109,64 @@ function addCardsToMain() {
         recentProjectsContainer.appendChild(nextCard);
         nextCard.appendChild(nextImage);
         nextCard.appendChild(nextInfoDiv);
+        nextInfoDiv.appendChild(nextTitle);
         nextInfoDiv.appendChild(nextGitHubButton);
         nextInfoDiv.appendChild(nextLiveURL);
     }
 }
 
-addCardsToMain();
+function checkPage() {
+    let body = document.querySelector("body");
+    let bodyClass = body.className;
+    console.log(bodyClass);
+
+    if (bodyClass === "home") {
+        addCardsToMain();
+    } else if (bodyClass === "projects") {
+        addAllProjects();
+    }
+}
+
+checkPage();
 
 
-// function addAllProjects() {
-//     for (let i = 0; i < allProjects.length; i++) {
+function addAllProjects() {
+    for (let i = 0; i < allProjects.length; i++) {
 
-//         // Create all relevant elements and set the appropriate attributes
-//         let nextCard = document.createElement("article");
-//         nextCard.setAttribute("class", "project-card");
+        // Create all relevant elements and set the appropriate attributes
+        let nextCard = document.createElement("article");
+        nextCard.setAttribute("class", "project-card");
 
-//         let nextImage = document.createElement("img");
-//         nextImage.setAttribute("class", "project-image");
-//         nextImage.setAttribute("src", allProjects[i].image);
+        let nextImage = document.createElement("img");
+        nextImage.setAttribute("class", "project-image");
+        nextImage.setAttribute("src", allProjects[i].image);
+        nextImage.setAttribute("alt", allProjects[i].alt);
 
-//         let nextInfoDiv = document.createElement("div");
-//         nextInfoDiv.setAttribute("class", "project-info flex-item flex-column");
+        let nextInfoDiv = document.createElement("div");
+        nextInfoDiv.setAttribute("class", "project-info flex-item flex-column");
 
-//         let nextGitHubButton = document.createElement("a");
-//         nextGitHubButton.setAttribute("class", "link light-text project-link");
-//         nextGitHubButton.setAttribute("href", allProjects[i].gitHub);
-//         nextGitHubButton.setAttribute("target", "_blank");
-//         nextGitHubButton.textContent = "View on Github";
+        let nextTitle = document.createElement("h5");
+        nextTitle.setAttribute("class", "base-text");
+        nextTitle.textContent = allProjects[i].name;
 
-//         let nextLiveURL = document.createElement("a");
-//         nextLiveURL.setAttribute("class", "link light-text project-link");
-//         nextLiveURL.setAttribute("href", allProjects[i].liveURL);
-//         nextLiveURL.setAttribute("target", "_blank");
-//         nextLiveURL.textContent = "See Live Site";
+        let nextGitHubButton = document.createElement("a");
+        nextGitHubButton.setAttribute("class", "link light-text project-link");
+        nextGitHubButton.setAttribute("href", allProjects[i].gitHub);
+        nextGitHubButton.setAttribute("target", "_blank");
+        nextGitHubButton.textContent = "View on Github";
 
-//         // Append each new element to its parent
-//         recentProjectsContainer.appendChild(nextCard);
-//         nextCard.appendChild(nextImage);
-//         nextCard.appendChild(nextInfoDiv);
-//         nextInfoDiv.appendChild(nextGitHubButton);
-//         nextInfoDiv.appendChild(nextLiveURL);
-//     }
-// }
+        let nextLiveURL = document.createElement("a");
+        nextLiveURL.setAttribute("class", "link light-text project-link");
+        nextLiveURL.setAttribute("href", allProjects[i].liveURL);
+        nextLiveURL.setAttribute("target", "_blank");
+        nextLiveURL.textContent = "See Live Site";
+
+        // Append each new element to its parent
+        allProjectsContainer.appendChild(nextCard);
+        nextCard.appendChild(nextImage);
+        nextCard.appendChild(nextInfoDiv);
+        nextInfoDiv.appendChild(nextTitle);
+        nextInfoDiv.appendChild(nextGitHubButton);
+        nextInfoDiv.appendChild(nextLiveURL);
+    }
+}
