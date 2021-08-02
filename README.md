@@ -1,4 +1,5 @@
 # Tucker Barrett's Portfolio
+
 #### This is my portfolio page, designed using HTML, CSS, and JavaScript.
 
 ## Link to Deployed Site
@@ -13,16 +14,18 @@
   * [License](#license)
   * [Contact](#contact)
 
-#### Technologies
+
+## Technologies
 * HTML
 * CSS 
 * JavaScript
 
-## Functionality
 
+## Functionality
 ![home-page-demo](./assets/images/home.gif)
 
 ![about/projects-demo](assets/images/about-projects.gif)
+
 
 ## File Architecture
 ```
@@ -54,6 +57,7 @@
 ├── index.html
 └── projects.html
 ```
+
 ## Challenges
 The portfolio page is a project in its own right, but is also a great chance to showcase some of the other projects I've worked on. While it took a while to fine-tune everything and get it looking exactly like I wanted, I found that this came much easier than previous attempts at building sites from the ground up. I chose to use pure CSS rather than a framework, both for the practice, and to show that I don't need to rely on frameworks to make a quality site. However, CSS continues to be one of the more challenging aspects of web design for me, but each time I make something like this, I learn something new. 
 
@@ -61,9 +65,11 @@ I needed to learn several new pieces of functionality for this project, includin
 
 I used exclusively Flexbox for the design of the pages. While the site is not designed in a mobile-first fashion, this was by choice, as I believe most people viewing my portfolio will likely be doing so from a computer. However, I made sure to make the site fully responsive for various screen sizes, so all layouts and functionality will be easy to navigate and use regardless of the user's device.
 
+
 ## Future Development
 * Add more animations to page components for improved visual effect
 * Use Lighthouse report to reach a perfect accessibility score
+
 
 ## License
 MIT License
@@ -87,6 +93,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
 
 ## Contact
 * Email - ctbarrett.tech@gmail.com
