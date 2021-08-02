@@ -69,6 +69,7 @@ I used exclusively Flexbox for the design of the pages. While the site is not de
 ## Future Development
 * Add more animations to page components for improved visual effect
 * Use Lighthouse report to reach a perfect accessibility score
+* Use a photo hosting service (such as Cloudinary) to optimize the speed of page loading
 
 
 ## License
