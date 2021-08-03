@@ -75,7 +75,7 @@ I used exclusively Flexbox for the design of the pages. While the site is not de
 ## License
 MIT License
 
-Copyright (c) [2021] [Charles Tucker Barrett]
+Copyright (c) 2021 Charles Tucker Barrett
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
