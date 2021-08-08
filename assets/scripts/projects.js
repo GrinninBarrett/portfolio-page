@@ -70,5 +70,4 @@ let allProjects = [
         gitHub: "https://github.com/GrinninBarrett/Technical-Documentation-Page",
         liveURL: "https://grinninbarrett.github.io/Technical-Documentation-Page/"
     }
-
 ]

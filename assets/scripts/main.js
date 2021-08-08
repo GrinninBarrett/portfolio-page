@@ -118,7 +118,6 @@ function addCardsToMain() {
 function checkPage() {
     let body = document.querySelector("body");
     let bodyClass = body.className;
-    console.log(bodyClass);
 
     if (bodyClass === "home") {
         addCardsToMain();
