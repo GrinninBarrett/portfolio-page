@@ -4,7 +4,7 @@
 
 ## Link to Deployed Site
 
-[Tucker's Portfolio](https://grinninbarrett.github.io/porfolio-page)
+[Tucker's Portfolio](https://ctbarrett.tech)
 
 ## Table of Contents
   * [Technologies](#technologies)
