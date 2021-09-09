@@ -25,7 +25,7 @@ let allProjects = [
 
     {
         name: "Wasted Class Time",
-        image: "./assets/images/wasted-class-time.png",
+        image: "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,q_auto:low,w_1000/v1631213149/Images/wasted-class-time_rqwdbt.png",
         alt: "Wasted Class Time application",
         gitHub: "https://github.com/GrinninBarrett/wasted-class-time",
         liveURL: "https://grinninbarrett.github.io/wasted-class-time/"
