@@ -1,5 +1,12 @@
 let allProjects = [
     {
+        name: "Platonic Friends Forever",
+        image: "./assets/images/platonic-friends-forever.png",
+        alt: "Platonic Friends Forever application",
+        gitHub: "https://github.com/GrinninBarrett/platonic-friends-forever",
+        liveURL: "https://pfforever.herokuapp.com/"
+    },
+    {
         name: "Skillet and Shaker",
         image: "./assets/images/skillet-and-shaker.png",
         alt: "Skillet and Shaker application",
