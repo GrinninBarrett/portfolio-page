@@ -97,7 +97,7 @@ function addCardsToMain() {
         let nextInfoDiv = document.createElement("div");
         nextInfoDiv.setAttribute("class", "project-info flex-item flex-column");
 
-        let nextTitle = document.createElement("h5");
+        let nextTitle = document.createElement("h3");
         nextTitle.setAttribute("class", "base-text");
         nextTitle.textContent = allProjects[i].name;
 
