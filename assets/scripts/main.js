@@ -157,6 +157,8 @@ function addAllProjects() {
         let nextImage = document.createElement("img");
         nextImage.setAttribute("class", "project-image");
         nextImage.setAttribute("src", allProjects[i].image);
+        nextImage.setAttribute("height", "350px");
+        nextImage.setAttribute("width", "350px");
         nextImage.setAttribute("alt", allProjects[i].alt);
 
         let nextInfoDiv = document.createElement("div");
