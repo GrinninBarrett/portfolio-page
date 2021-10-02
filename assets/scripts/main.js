@@ -81,8 +81,16 @@ function addCardsToMain() {
         let nextCard = document.createElement("article");
         nextCard.setAttribute("class", "project-card");
 
+        let nextPictureEl = document.createElement("picture");
+
+        let primarySource = document.createElement("source");
+        primarySource.setAttribute("srcset", allProjects[i].primarySource);
+        primarySource.setAttribute("type", "image/webp");
+
         let nextImage = document.createElement("img");
         nextImage.setAttribute("class", "project-image");
+        nextImage.setAttribute("height", "350px");
+        nextImage.setAttribute("width", "350px");
         nextImage.setAttribute("src", allProjects[i].image);
         nextImage.setAttribute("alt", allProjects[i].alt);
 
@@ -107,7 +115,9 @@ function addCardsToMain() {
 
         // Append each new element to its parent
         recentProjectsContainer.appendChild(nextCard);
-        nextCard.appendChild(nextImage);
+        nextCard.appendChild(nextPictureEl);
+        nextPictureEl.appendChild(primarySource);
+        nextPictureEl.appendChild(nextImage);
         nextCard.appendChild(nextInfoDiv);
         nextInfoDiv.appendChild(nextTitle);
         nextInfoDiv.appendChild(nextGitHubButton);
@@ -136,6 +146,12 @@ function addAllProjects() {
         let nextCard = document.createElement("article");
         nextCard.setAttribute("class", "project-card");
 
+        let nextPictureEl = document.createElement("picture");
+
+        let primarySource = document.createElement("source");
+        primarySource.setAttribute("srcset", allProjects[i].primarySource);
+        primarySource.setAttribute("type", "image/webp");
+
         let nextImage = document.createElement("img");
         nextImage.setAttribute("class", "project-image");
         nextImage.setAttribute("src", allProjects[i].image);
@@ -162,7 +178,9 @@ function addAllProjects() {
 
         // Append each new element to its parent
         allProjectsContainer.appendChild(nextCard);
-        nextCard.appendChild(nextImage);
+        nextCard.appendChild(nextPictureEl);
+        nextPictureEl.appendChild(primarySource);
+        nextPictureEl.appendChild(nextImage);        
         nextCard.appendChild(nextInfoDiv);
         nextInfoDiv.appendChild(nextTitle);
         nextInfoDiv.appendChild(nextGitHubButton);

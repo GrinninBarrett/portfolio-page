@@ -7,13 +7,14 @@
     --light-text: #cbdfdc;
     --medium-gray: #7b8687;
     --green-accent: #6e8670;
-    --light-green-accent: #b1c5b3;
+    --light-green-accent: #d0e4d2;
     --red-accent: #b4746c;
     --light-blue: #a0b8d1;
     --blue-accent: #6294c8;
 }
 
 body {
+    margin: 0;
     background-color: var(--background);
     font-family: "Marcellus", sans-serif;
 }
@@ -169,10 +170,6 @@ footer {
     width: 100%;
     justify-content: space-between;
     /* padding: 0 1em; */
-}
-
-.tucker-photo {
-    height: 400px;
 }
 
 .project-cards-container {
