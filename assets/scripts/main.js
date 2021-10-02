@@ -105,12 +105,14 @@ function addCardsToMain() {
         nextGitHubButton.setAttribute("class", "link light-text project-link");
         nextGitHubButton.setAttribute("href", allProjects[i].gitHub);
         nextGitHubButton.setAttribute("target", "_blank");
+        nextGitHubButton.setAttribute("rel", "noreferrer");
         nextGitHubButton.textContent = "View on Github";
 
         let nextLiveURL = document.createElement("a");
         nextLiveURL.setAttribute("class", "link light-text project-link");
         nextLiveURL.setAttribute("href", allProjects[i].liveURL);
         nextLiveURL.setAttribute("target", "_blank");
+        nextLiveURL.setAttribute("rel", "noreferrer");
         nextLiveURL.textContent = "See Live Site";
 
         // Append each new element to its parent
@@ -168,12 +170,14 @@ function addAllProjects() {
         nextGitHubButton.setAttribute("class", "link light-text project-link");
         nextGitHubButton.setAttribute("href", allProjects[i].gitHub);
         nextGitHubButton.setAttribute("target", "_blank");
+        nextGitHubButton.setAttribute("rel", "noreferrer");
         nextGitHubButton.textContent = "View on Github";
 
         let nextLiveURL = document.createElement("a");
         nextLiveURL.setAttribute("class", "link light-text project-link");
         nextLiveURL.setAttribute("href", allProjects[i].liveURL);
         nextLiveURL.setAttribute("target", "_blank");
+        nextLiveURL.setAttribute("rel", "noreferrer");
         nextLiveURL.textContent = "See Live Site";
 
         // Append each new element to its parent
