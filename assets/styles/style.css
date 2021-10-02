@@ -122,6 +122,10 @@ footer {
     color: var(--base-text);
 }
 
+.green-text {
+    color: var(--green-accent);
+}
+
 .light-text {
     color: var(--light-text);
 }
@@ -216,7 +220,7 @@ footer {
 }
 
 .project-card:hover .project-info {
-    opacity: 0.9;
+    opacity: 0.95;
 }
 
 .project-link {
