@@ -78,6 +78,10 @@ footer {
     margin-top: 25px;
 }
 
+#projects-heading {
+    padding-left: 3em;
+}
+
 
 #contact {
     justify-content: space-evenly;
@@ -113,7 +117,7 @@ footer {
 
 
 .container {
-    max-width: 75%;
+    max-width: 80%;
     margin: auto;
 }
 
@@ -178,10 +182,12 @@ footer {
     justify-content: space-evenly;
 }
 
+
+/* TODO: Figure out Home vs About intro containers width/padding/margin */
 .top-intro-container {
     width: 100%;
     justify-content: space-between;
-    /* padding: 0 1em; */
+    margin: 0 3em;
 }
 
 .project-cards-container {
@@ -408,6 +414,7 @@ transform: translate(-50%, calc(-100% - 5px)) rotate(45deg);
 
     .tucker-photo {
         height: 300px;
+        width: 300px;
     }
 }
 
@@ -465,8 +472,6 @@ transform: translate(-50%, calc(-100% - 5px)) rotate(45deg);
         align-items: flex-start;
     }
 
-
-
     .nav-list {
         flex-direction: column;
         justify-content: center;
@@ -492,6 +497,7 @@ transform: translate(-50%, calc(-100% - 5px)) rotate(45deg);
     
     .tucker-photo {
         height: 350px;
+        width: 350px;
     }
 
     #heading-container {

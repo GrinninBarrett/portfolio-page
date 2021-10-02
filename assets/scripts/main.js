@@ -97,9 +97,16 @@ function addCardsToMain() {
         let nextInfoDiv = document.createElement("div");
         nextInfoDiv.setAttribute("class", "project-info flex-item flex-column");
 
-        let nextTitle = document.createElement("h3");
+        let nextTitle = document.createElement("h5");
         nextTitle.setAttribute("class", "base-text");
+        nextTitle.style.margin = 0;
         nextTitle.textContent = allProjects[i].name;
+
+        let nextTech = document.createElement("p");
+        nextTech.setAttribute("class", "green-text");
+        nextTech.style.textAlign = "center";
+        nextTech.style.margin = 0;
+        nextTech.textContent = allProjects[i].technologies;
 
         let nextGitHubButton = document.createElement("a");
         nextGitHubButton.setAttribute("class", "link light-text project-link");
@@ -122,6 +129,7 @@ function addCardsToMain() {
         nextPictureEl.appendChild(nextImage);
         nextCard.appendChild(nextInfoDiv);
         nextInfoDiv.appendChild(nextTitle);
+        nextInfoDiv.appendChild(nextTech);
         nextInfoDiv.appendChild(nextGitHubButton);
         nextInfoDiv.appendChild(nextLiveURL);
     }
