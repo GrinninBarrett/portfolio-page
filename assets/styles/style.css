@@ -4,10 +4,10 @@
 :root {
     --background: rgb(238, 238, 238);
     --base-text: #1f2827;
-    --light-text: #cbdfdc;
+    --light-text: #ddf0ed;
     --medium-gray: #7b8687;
-    --green-accent: #6e8670;
-    --light-green-accent: #d0e4d2;
+    --green-accent: #47684a;
+    --light-green-accent: #c6ecc9;
     --red-accent: #b4746c;
     --light-blue: #a0b8d1;
     --blue-accent: #6294c8;
@@ -32,7 +32,7 @@ h1 {
     font-size: 2.5em;
 }
 
-h3, h4, h5 {
+h2, h3, h4, h5 {
     font-size: 1.2em;
 }
 
@@ -63,6 +63,10 @@ footer {
 
 #description{
     font-size: 1.5em;
+}
+
+#slogan {
+    font-size: 1.2em;
 }
 
 #bottom-intro-container {
@@ -119,6 +123,10 @@ footer {
 }
 
 .light-text {
+    color: var(--light-text);
+}
+
+.light-link {
     color: var(--light-text);
 }
 
