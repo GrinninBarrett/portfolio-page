@@ -117,7 +117,7 @@ footer {
 
 
 .container {
-    max-width: 80%;
+    max-width: 85%;
     margin: auto;
 }
 
@@ -182,8 +182,6 @@ footer {
     justify-content: space-evenly;
 }
 
-
-/* TODO: Figure out Home vs About intro containers width/padding/margin */
 .top-intro-container {
     width: 100%;
     justify-content: space-between;
@@ -445,6 +443,10 @@ transform: translate(-50%, calc(-100% - 5px)) rotate(45deg);
         margin-top: 0;
     }
 
+    #project-container {
+        padding-left: 3em;
+    }
+
     #about-text-container {
         width: 100%;
     }
@@ -457,6 +459,10 @@ transform: translate(-50%, calc(-100% - 5px)) rotate(45deg);
         margin-bottom: 25px;
     }
 
+
+    .container {
+        width: 85%;
+    }
 
     .intro {
         height: auto;
