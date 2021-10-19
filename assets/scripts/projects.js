@@ -1,7 +1,7 @@
 let allProjects = [
     {
         name: "Platonic Friends Forever",
-        primarySource: "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_661,q_auto:low/v1633128074/Images/platonic-friends-forever_vlggd7.webp",
+        primarySource: "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_579,q_auto/v1633128074/Portfolio%20Images/platonic-friends-forever_vlggd7.webp",
         image: "./assets/images/platonic-friends-forever.png",
         alt: "Platonic Friends Forever application",
         gitHub: "https://github.com/GrinninBarrett/platonic-friends-forever",
@@ -10,7 +10,7 @@ let allProjects = [
     },
     {
         name: "Skillet and Shaker",
-        primarySource: "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_628,q_auto:low/v1633128074/Images/skillet-and-shaker_ckyafc.webp",
+        primarySource: "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_530,q_auto/v1633128074/Portfolio%20Images/skillet-and-shaker_ckyafc.webp",
         image: "./assets/images/skillet-and-shaker.png",
         alt: "Skillet and Shaker application",
         gitHub: "https://github.com/GrinninBarrett/recipe-finder",
@@ -20,7 +20,7 @@ let allProjects = [
 
     {
         name: "Weather Dashboard",
-        primarySource: "https://res.cloudinary.com/dydjenltr/image/upload/q_auto:low/v1633128074/Images/weather-dashboard_ywoomr.webp",
+        primarySource: "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_527,q_auto/v1633128074/Portfolio%20Images/weather-dashboard_ywoomr.webp",
         image: "./assets/images/weather-dashboard.png",
         alt: "Weather Dashboard application",
         gitHub: "https://github.com/GrinninBarrett/weather-dashboard",
@@ -30,7 +30,7 @@ let allProjects = [
 
     {
         name: "Etch-a-Sketch",
-        primarySource: "https://res.cloudinary.com/dydjenltr/image/upload/q_auto/v1633128048/Images/etch-a-sketch_wcltnl.webp",
+        primarySource: "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_554,q_auto/v1633128048/Portfolio%20Images/etch-a-sketch_wcltnl.webp",
         image: "./assets/images/etch-a-sketch.png",
         alt: "Etch-a-Sketch application",
         gitHub: "https://github.com/GrinninBarrett/etch-a-sketch",
@@ -40,7 +40,7 @@ let allProjects = [
 
     {
         name: "Wasted Class Time",
-        primarySource: "https://res.cloudinary.com/dydjenltr/image/upload/q_auto/v1631213149/Images/wasted-class-time_rqwdbt.webp",
+        primarySource: "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_486,q_auto/v1631213149/Portfolio%20Images/wasted-class-time_rqwdbt.webp",
         image: "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,q_auto:low,w_1000/v1631213149/Images/wasted-class-time_rqwdbt.png",
         alt: "Wasted Class Time application",
         gitHub: "https://github.com/GrinninBarrett/wasted-class-time",
@@ -50,7 +50,7 @@ let allProjects = [
 
     {
         name: "Work Day Scheduler",
-        primarySource: "https://res.cloudinary.com/dydjenltr/image/upload/q_auto/v1633128074/Images/work-day-scheduler_h7jeof.webp",
+        primarySource: "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_527,q_auto/v1633128074/Portfolio%20Images/work-day-scheduler_h7jeof.webp",
         image: "./assets/images/work-day-scheduler.png",
         alt: "Work Day Scheduler application",
         gitHub: "https://github.com/GrinninBarrett/work-day-scheduler",
@@ -60,7 +60,7 @@ let allProjects = [
 
     {
       name: "Code Quiz",
-      primarySource: "https://res.cloudinary.com/dydjenltr/image/upload/q_auto/v1633128074/Images/code-quiz_hmveas.webp",
+      primarySource: "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_486,q_auto/v1633128074/Portfolio%20Images/code-quiz_hmveas.webp",
       image: "./assets/images/code-quiz.png",
       alt: "Code Quiz application",
       gitHub: "https://github.com/GrinninBarrett/code-quiz",
@@ -70,7 +70,7 @@ let allProjects = [
 
     {
         name: "Password Generator",
-        primarySource: "https://res.cloudinary.com/dydjenltr/image/upload/q_auto/v1633128074/Images/password-generator_bcoihz.webp",
+        primarySource: "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_489,q_auto/v1633128074/Portfolio%20Images/password-generator_bcoihz.webp",
         image: "./assets/images/password-generator.png",
         alt: "Password Generator application",
         gitHub: "https://github.com/GrinninBarrett/password-generator",
@@ -80,7 +80,7 @@ let allProjects = [
 
     {
         name: "Rock-Paper-Scissors",
-        primarySource: "https://res.cloudinary.com/dydjenltr/image/upload/q_auto/v1633128074/Images/rock-paper-scissors_tyzl9f.webp",
+        primarySource: "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_488,q_auto/v1633128074/Portfolio%20Images/rock-paper-scissors_tyzl9f.webp",
         image: "./assets/images/rock-paper-scissors.png",
         alt: "Rock Paper Scissors application",
         gitHub: "https://github.com/GrinninBarrett/rock-paper-scissors-new",
@@ -90,7 +90,7 @@ let allProjects = [
 
     {
         name: "Technical Documentation Page",
-        primarySource: "https://res.cloudinary.com/dydjenltr/image/upload/q_auto:good/v1633128074/Images/technical-documentation-page_quwm4j.webp",
+        primarySource: "https://res.cloudinary.com/dydjenltr/image/upload/c_scale,h_523,q_auto/v1633128074/Portfolio%20Images/technical-documentation-page_quwm4j.webp",
         image: "./assets/images/technical-documentation-page.png",
         alt: "Technical Documentation page",
         gitHub: "https://github.com/GrinninBarrett/Technical-Documentation-Page",
