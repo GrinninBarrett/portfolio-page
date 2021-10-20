@@ -113,7 +113,7 @@ function addCardsToMain() {
         nextGitHubButton.setAttribute("href", allProjects[i].gitHub);
         nextGitHubButton.setAttribute("target", "_blank");
         nextGitHubButton.setAttribute("rel", "noreferrer");
-        nextGitHubButton.textContent = "View on Github";
+        nextGitHubButton.textContent = "View on GitHub";
 
         let nextLiveURL = document.createElement("a");
         nextLiveURL.setAttribute("class", "link light-text project-link");
@@ -188,7 +188,7 @@ function addAllProjects() {
         nextGitHubButton.setAttribute("href", allProjects[i].gitHub);
         nextGitHubButton.setAttribute("target", "_blank");
         nextGitHubButton.setAttribute("rel", "noreferrer");
-        nextGitHubButton.textContent = "View on Github";
+        nextGitHubButton.textContent = "View on GitHub";
 
         let nextLiveURL = document.createElement("a");
         nextLiveURL.setAttribute("class", "link light-text project-link");
